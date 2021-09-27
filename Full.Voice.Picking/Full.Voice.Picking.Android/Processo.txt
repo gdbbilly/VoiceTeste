@@ -1,0 +1,47 @@
+﻿PROCESSO SEPARAÇÃO POR VOZ 
+
+* login
+	- usuário e senha do coletor
+	- Configuração da url do serviço(endereço WebService)
+
+------ INICIO LOOP TAREFAS ----------
+* Tarefas
+	- busca a próxima tarefa do usuário
+		- caso não tenha tarefas, app vai avisar que o usuário não tem tarefas 
+		- caso tenha tarefa, ele vai pronunciar qual a tarefa e vai para tela do unitizador
+	
+	- Usuário pode buscar tarefas novamente(caso não tenha nenhuma tarefa no momento que abriu o app)
+	- Usuário pode fazer logoff
+
+* Unitizador
+	- Ler Código de barras do Unitizador ou digitar o unitizador
+	- abandonar (abandona o processo)
+
+	------ INICIO LOOP ITENS ----------
+
+	* Item
+		- App Pronuncia o endereço do item para o usuário
+		- Usuário pode solicitar ao app para repetir o endereço com o comando "repita , repite, repitir"
+		- Usuário pode solicitar ao app para pronunciar a descrição do produto com o comando "produto"
+		- Usuário deve dizer os 4 ultimos digitos do código de barras do produto para mostrar que está separando o produto correto
+		- Usuário pode abandonar o processo de separação com o comando "abandonar", o app vai pedir confirmação e o usuário deve dizer "sim" ou "não".
+
+	* Quantidade Item
+		- App Pronuncia a quantidade que precisa ser separada
+		- Usuário pode solicitar ao app para repetir o endereço com o comando "repita , repite, repitir"
+		- Usuário pode solicitar ao app para pronunciar a descrição do produto com o comando "produto"
+		- Usuário deve dizer a quantidade separada
+			- Quantidade correta, segue para proxíma etapa
+			- Quantidade inferior, app vai pedir confirmação para o usuário se ele realmente deseja separar com quantidade inferior
+			- Quantidade superior, repete a quantidade que o usuário precisa separar
+
+		- Usuário pode abandonar o processo de separação com o comando "abandonar", o app vai pedir confirmação e o usuário deve dizer "sim" ou "não".
+
+	---CASO HAJA MAIS QUE UM ITEM ELE RETORNA PARA ETAPA DO ITEM---
+
+* Consolidação
+	- App Pronuncia a área de consolidação 
+	- Usuário deve dizer a área de consolidação para encerrar a separação
+	- Usuário pode abandonar o processo de separação com o comando "abandonar", o app vai pedir confirmação e o usuário deve dizer "sim" ou "não".
+
+---CASO HAJA MAIS QUE UMA TAREFA ELE RETORNA PARA ETAPA DE TAREFA---

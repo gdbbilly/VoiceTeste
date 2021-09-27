@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Full.Voice.Picking/Full.Voice.Picking/obj/Debug
+/.vs/Voice.Teste
+/.vs/VoiceTeste/v16
+/Full.Voice.Picking/Full.Voice.Picking.Android/obj/Debug/110
+/packages

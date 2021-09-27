@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:extensions="clr-namespace:Voice.Picking.Test.Pages.Extensions;assembly=Voice.Picking.Test"
+             x:Class="Voice.Picking.Test.Pages.MainPage"
+             Title="Unitizador">
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" Spacing="0"
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.0, Constant=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.0,Constant=0}"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.8,Constant=0}"
+                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=0,Constant=40}">
+            <Label Text="Entrada" FontSize="{x:Static extensions:FontSizeUtil.Micro}" Margin="0"></Label>
+            <Entry Text="" x:Name="txtCampo" IsEnabled="True" FontSize="{x:Static extensions:FontSizeUtil.Medium}" 
+                           HorizontalOptions="FillAndExpand" VerticalOptions="Start"></Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Spacing="0"
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.1, Constant=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.0,Constant=0}"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.8,Constant=0}"
+                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=0,Constant=40}">
+            <Label Text="Saída" FontSize="{x:Static extensions:FontSizeUtil.Micro}" Margin="0"></Label>
+            <Entry Text="" x:Name="txtOut" IsEnabled="True" FontSize="{x:Static extensions:FontSizeUtil.Medium}" 
+                           HorizontalOptions="FillAndExpand" VerticalOptions="Start"></Entry>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Spacing="0"
+                         RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.2, Constant=0}"
+                         RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2,Constant=0}"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.8,Constant=0}"
+                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=0,Constant=40}">
+            <Label Text="Ouvir?" FontSize="{x:Static extensions:FontSizeUtil.Small}" Margin="0"></Label>
+            <Switch  IsToggled="False" x:Name="switchSpeak"  ></Switch>
+        </StackLayout>
+        <Button x:Name="btnVoltar" Clicked="BtnVoltar_OnClicked" Style="{StaticResource ButtonStyleCancelar}" HorizontalOptions="FillAndExpand" Text="Falar"></Button>
+
+    </StackLayout>
+</ContentPage>

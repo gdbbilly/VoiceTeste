@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Voice.Picking.Test.App">
+	<Application.Resources>
+
+        <ResourceDictionary>
+            <Style x:Key="ButtonStyleAceitar" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#F26B35"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+
+            <Style x:Key="ButtonStyleCancelar" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#757575"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+
+            <Style x:Key="BoxLinhaSeparadora" TargetType="BoxView">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="HeightRequest" Value="1"/>
+                <Setter Property="BackgroundColor" Value="#bdbdbd"/>
+                <Setter Property="Margin" Value="0,5,0,5"/>
+            </Style>
+
+            <Style x:Key="LabelPrimario" TargetType="Label">
+                <Setter Property="TextColor" Value="#212121"/>
+            </Style>
+
+            <Style x:Key="LabelSecundario" TargetType="Label">
+                <Setter Property="TextColor" Value="#757575"/>
+            </Style>
+
+            <Style x:Key="SelecaoStackLayout" TargetType="StackLayout">
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="Margin" Value="0,0,0,10"/>
+                <Setter Property="BackgroundColor" Value="#209FAF"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+
+            <Style x:Key="SelecaoLabel" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="BackgroundColor" Value="#209FAF"/>
+                <Setter Property="TextColor" Value="#ffffff"/>
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
